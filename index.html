@@ -1,36 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Form Demo</title>
-  <style>
-    form {
-      background-color: aliceblue;
-    }
-  </style>
-</head>
+<html>
+<style>
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+
+div {
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
 <body>
-  <form name="contact" method="POST" data-netlify="true">
-  <p>
-    <label>Your Name: <input type="text" name="name" /></label>
-  </p>
-  <p>
-    <label>Your Email: <input type="email" name="email" /></label>
-  </p>
-  <p>
-    <label>Your Role: <select name="role[]" multiple>
-      <option value="leader">Leader</option>
-      <option value="follower">Follower</option>
-    </select></label>
-  </p>
-  <p>
-    <label>Message: <textarea name="message"></textarea></label>
-  </p>
-  <p>
-    <button type="submit">Send</button>
-  </p>
-</form>
+
+<h3>Using CSS to style an HTML Form</h3>
+
+<div>
+<fieldset style="text-align:left;">
+<legend><b>Please feel free to send a message</b></legend>
+Email: <br>
+<input type="text" style="width:630px;height:20px;" /><br />
+Message: <br>
+<textarea rows="4" cols="85"></textarea><br />
+<br>
+
+
+
+</fieldset>
+</div>
+
 </body>
 </html>
